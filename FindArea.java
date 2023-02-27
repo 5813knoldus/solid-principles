@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class FindArea
 {
   public static void main (String[]args)
@@ -7,7 +8,7 @@ public class FindArea
     int choice = 0;
     do
     {
-        System.out.println ("Select your choice !!");
+        System.out.println ("Select your choice !! ");
         System.out.println ("1. Rectangle ");
         System.out.println ("2. Square ");
         System.out.println ("3. Exit ");
@@ -19,14 +20,14 @@ public class FindArea
         {
             case 1:
 	        {
-                Rectangle rectangle_object = new Rectangle ();
-                System.out.print ("Enter the width and height of the Rectangle with space :");
-                int width = scan.nextInt ();
-                int height = scan.nextInt ();
-                rectangle_object.setWidth (width);
-                rectangle_object.setHeight (height);
-                System.out.println ("Area of the Rectangle : " + rectangle_object.getArea ()+"\n");
-                break;
+                     Rectangle rectangle_object = new Rectangle ();
+                     System.out.print ("Enter the width and height of the Rectangle with space :");
+                     int width = scan.nextInt ();
+                     int height = scan.nextInt ();
+                     rectangle_object.setWidth (width);
+                     rectangle_object.setHeight (height);
+                     System.out.println ("Area of the Rectangle : " + rectangle_object.getArea ()+"\n");
+                     break;
 	        }
 	 
 	        case 2:
@@ -56,9 +57,9 @@ class Rectangle
     m_width = width;
   }
 
-  public void setHeight (int h)
+  public void setHeight (int height)
   {
-    m_height = h;
+    m_height = height;
   }
 
   public int getWidth ()
